@@ -436,7 +436,7 @@ begin
     850: //CP850
       Result := UTF8Decode(CP850ToUTF8(PAnsiChar(S)));
     852: //CP852
-      Result := UTF8Decode(CP852ToUTF8(PAnsiChar(S)));
+      Result := UTF8Decode(CP850ToUTF8(PAnsiChar(S)));
     866: //CP866
       Result := UTF8Decode(CP866ToUTF8(PAnsiChar(S)));
     874: //CP874
@@ -525,7 +525,7 @@ begin
     850: //CP850
       Result := UTF8ToCP850(UTF8Encode(US));
     852: //CP852
-      Result := UTF8ToCP852(UTF8Encode(US));
+      Result := UTF8ToCP850(UTF8Encode(US));
     866: //CP866
       Result := UTF8ToCP866(UTF8Encode(US));
     874: //CP874
@@ -715,8 +715,8 @@ begin
         end;
       852: //CP852
         begin
-          DbcConvert := @CP852ToUTF8;
-          PlainConvert := @UTF8ToCP852;
+          DbcConvert := @CP850ToUTF8;
+          PlainConvert := @UTF8ToCP850;
         end;
       866: //CP866
         begin
@@ -894,7 +894,7 @@ begin
       850: //CP850
         sUTF8 := CP850ToUTF8(PAnsiChar(Src));
       852: //CP852
-        sUTF8 := CP852ToUTF8(PAnsiChar(Src));
+        sUTF8 := CP850ToUTF8(PAnsiChar(Src));
       866: //CP866
         sUTF8 := CP866ToUTF8(PAnsiChar(Src));
       874: //CP874
@@ -955,7 +955,7 @@ begin
       850: //CP850
         sUTF8 := UTF8ToCP850(PAnsiChar(Src));
       852: //CP852
-        sUTF8 := UTF8ToCP852(PAnsiChar(Src));
+        sUTF8 := UTF8ToCP850(PAnsiChar(Src));
       866: //CP866
         sUTF8 := UTF8ToCP866(PAnsiChar(Src));
       874: //CP874
@@ -1025,7 +1025,7 @@ begin
       850: //CP850
         Result := CP850ToUTF8(PAnsiChar(sUTF8));
       852: //CP852
-        Result := CP852ToUTF8(PAnsiChar(sUTF8));
+        Result := CP850ToUTF8(PAnsiChar(sUTF8));
       866: //CP866
         Result := CP866ToUTF8(PAnsiChar(sUTF8));
       874: //CP874
@@ -1091,7 +1091,7 @@ begin
       850: //CP850
         sUTF8 := UTF8ToCP850(Src);
       852: //CP852
-        sUTF8 := UTF8ToCP852(Src);
+        sUTF8 := UTF8ToCP850(Src);
       866: //CP866
         sUTF8 := UTF8ToCP866(Src);
       874: //CP874
@@ -1860,4 +1860,4 @@ begin
 end;
 
 end.
-
+

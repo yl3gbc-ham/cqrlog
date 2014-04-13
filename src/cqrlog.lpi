@@ -633,7 +633,7 @@
     <Version Value="9"/>
     <SearchPaths>
       <Libraries Value="$(LazarusDir)/lcl"/>
-      <OtherUnitFiles Value="lnet/lib;ipc;mysql"/>
+      <OtherUnitFiles Value="lnet/lib;ipc;mysql;zeos;zeos/lib"/>
       <SrcPath Value="$(LazarusDir)/lcl;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)"/>
       <LCLWidgetType Value="gtk2"/>
     </SearchPaths>

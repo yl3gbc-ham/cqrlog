@@ -19,7 +19,7 @@ uses
   Classes, SysUtils, LResources, Forms, Controls, Dialogs, DB, FileUtil,
   memds, mysql51conn, sqldb, inifiles, stdctrls, RegExpr,
   dynlibs, lcltype, ExtCtrls, sqlscript, process, mysql51dyn, ssl_openssl_lib,
-  mysql55dyn, mysql55conn, CustApp;
+  mysql55dyn, mysql55conn, CustApp, ZConnection, ZDataset, ZSequence, ZDbcIntfs;
 
 const
   MaxCall   = 100000;
